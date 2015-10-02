@@ -11,3 +11,4 @@ My Computer Science 2 Code
 - Assignment 7: Part 1 of https://classroom.google.com/c/MTUwMzY4NDI1/a/MjAyNjMzMTI0/details
 - Assignment 8: Part 2 of https://classroom.google.com/c/MTUwMzY4NDI1/a/MjAyNjMzMTI0/details
 - Assignment 9: Create an `addThreeNumbers` function
+- Assignment 10: Create a `calcRunSpeed` random algorithim function to calculate a person's running speed
