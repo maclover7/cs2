@@ -13,3 +13,4 @@ My Computer Science 2 Code
 - Assignment 9: Create an `addThreeNumbers` function
 - Assignment 10: https://classroom.google.com/c/MTUwMzY4NDI1/a/MjY1MDI0Njcx/details
 - Assignment 11: https://classroom.google.com/c/MTUwMzY4NDI1/a/Mjc1NzMxNDI2/details
+- Assignment 12: https://classroom.google.com/c/MTUwMzY4NDI1/a/Mjc3NDY5NDEx/details
