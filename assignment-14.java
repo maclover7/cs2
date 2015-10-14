@@ -48,8 +48,8 @@ public class RectangleFunctions {
       boolean isRectangle = isRectangle(rectx1, recty1, rectx2, recty2);
       
       // Return data
-      System.out.println(pointCheck + " ");
-      System.out.println();
+      System.out.println("The point lies within the rectangle: " + pointCheck);
+      System.out.println("The points provided form a valid rectangle: " + isRectangle);
     }
     
     public static boolean checkPoint(int x1, int y1, int x2, int y2, int x3, int y3){
@@ -67,7 +67,7 @@ public class RectangleFunctions {
     public static boolean isRectangle(int x1, int y1, int x2, int y2){
       int y = y1 - y1;
       int x = x2 - x1;
-      int slope = y - x;
+      int slope = y / x;
       if (slope == 0){
         return true;
       } else {
