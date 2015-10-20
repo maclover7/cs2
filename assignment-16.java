@@ -40,6 +40,7 @@ public class Clock {
   private int hours;
   private int minutes;
   private int seconds;
+  private String sound;
   
   public Clock(int inhours, int inminutes, int inseconds){
     hours = inhours;
@@ -47,19 +48,53 @@ public class Clock {
     seconds = inseconds;
   }
   
+  // ALARM
+  public String playAlarm(){
+    return "Alarm is playing!";
+  }
+  
+  // HOURS
   public int getHours(){
     return hours;
   }
   
+  public void setHours(int h){
+    hours = h;
+  }
+  
+  // MILITARY
+  public boolean isMilitary(){
+    return isMilitary;
+  }
+  
+  public void setMilitary(boolean m){
+    isMilitary = m;
+  }
+  
+  // MINUTES
   public int getMinutes(){
     return minutes;
   }
   
+  public void setMinutes(int m){
+    minutes = m;
+  }
+  
+  // SECONDS
   public int getSeconds(){
     return seconds;
   }
   
-  public static void setMilitary(boolean military){
-    boolean isMilitary = military;
+  public void setSeconds(int s){
+    seconds = s;
+  }
+  
+  // SOUND
+  public String getSound(){
+    return sound;
+  }
+  
+  public void setSound(String s){
+    sound = s;
   }
 }
