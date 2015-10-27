@@ -29,13 +29,22 @@ public class PersonClass {
 }
 
 public class Person {
+  public int age;
+  public String hair_color;
+  public String eye_color;
   public String gender;
   public int height;
+  public String name;
   public int weight;
   
-  public Person(String gdr, int ht, int wt){
+  
+  public Person(String gdr, int ht, int wt, int a, String hr_clr, String nm, String eye_clr){
+    age = a;
+    hair_color = hr_clr;
+    eye_color = eye_clr;
     gender = gdr;
     height = ht;
+    name = nm;
     weight = wt;
   }
 }
