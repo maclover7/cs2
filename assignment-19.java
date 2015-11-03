@@ -34,7 +34,9 @@ public class ApartmentWork {
       System.out.println("Please enter if the apartment has air conditioning (as a boolean -- true or false):");
       boolean apartment_aircon = sc.nextBoolean();
       Apartment apartment = building.newApartment(apartment_rent, apartment_type, apartment_number_of_rooms, apartment_number_of_occupants, apartment_aircon);
-      // Return data
+      // Return monthly cost
+      int cost = 1;
+      System.out.println("The monthly cost for the above apartment is " + cost + ".");
     }
 }
 
@@ -51,6 +53,16 @@ public class Apartment {
     setNumberOfRooms(number_of_rooms);
     setNumberOfOccupants(number_of_occupants);
     aircon = aircon;
+  }
+  
+  public int calcRent(){
+    int base = number_of_occupants * number_of_rooms * 100;
+    if (aircon == true){
+      int rent = base + 200;
+    } else {
+      int rent = base - 100;
+    }
+    return rent;
   }
   
   public void setNumberOfOccupants(int number_of_occupants){
@@ -81,7 +93,9 @@ public class Building {
     Apartment[] apartments = new Apartment[10];
   }
   
-  public calcRent(){}
+  public int calcRent(Apartment apartment) {
+    return apartment.calcRent();
+  }
   
   public Apartment newApartment(int rent, String type, int number_of_rooms, int number_of_occupants, boolean aircon) {
     Apartment apartment = new Apartment(rent, type, number_of_rooms, number_of_occupants, aircon);
