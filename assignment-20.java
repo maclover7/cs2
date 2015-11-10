@@ -27,20 +27,20 @@ public class CircleWork {
       Circle circle = new Circle(input, input_type, name);
       
       // return data
-      System.out.println("The area for the circle is: " + circle.area);
-      System.out.println("The circumference for the circle is: " + circle.circumference);
-      System.out.println("The diameter for the circle is: " + circle.diameter);
-      System.out.println("The name for the circle is: " + circle.name);
-      System.out.println("The radius for the circle is: " + circle.radius);
+      System.out.println("The area for the circle is: " + circle.getArea());
+      System.out.println("The circumference for the circle is: " + circle.getCircumference());
+      System.out.println("The diameter for the circle is: " + circle.getDiameter());
+      System.out.println("The name for the circle is: " + circle.getName());
+      System.out.println("The radius for the circle is: " + circle.getRadius());
     }
 }
 
 public class Circle {
-  public int area;
-  public int circumference;
-  public int diameter;
-  public String name;
-  public int radius;
+  private int area;
+  private int circumference;
+  private int diameter;
+  private String name;
+  private int radius;
   
   public Circle(int input, int input_type, String name) {
     // set name
@@ -57,6 +57,29 @@ public class Circle {
        setValues(radius);
     }
   }
+  
+  // GET METHODS
+  private int getArea() {
+    return area;
+  }
+  
+  private int getcircumference () {
+    return circumference;
+  }
+  
+  private int getDiameter() {
+    return diameter;
+  }
+  
+  private String getName() {
+    return name;
+  }
+  
+  private int getRadius() {
+    return radius;
+  }
+  
+  // SET METHODS
   
   private void setArea(int radius) {
     area = (int) (3.14 * radius * radius);
