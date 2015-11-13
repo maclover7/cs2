@@ -24,3 +24,4 @@ My Computer Science 2 Code
 - Assignment 20: https://classroom.google.com/c/MTUwMzY4NDI1/a/MzY0NTgyMjYz/details
 - Assignment 21: https://classroom.google.com/c/MTUwMzY4NDI1/a/MzY2NDE2NDE3/details
 - Assignment 22: https://classroom.google.com/c/MTUwMzY4NDI1/a/MzY3NjYwNzI5/details
+- Assignment 23: https://classroom.google.com/c/MTUwMzY4NDI1/a/MjI2ODcxODg2/details
