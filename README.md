@@ -32,3 +32,4 @@ My Computer Science 2 Code
   - Part 3: Math C
   - Part 4: Math D
   - Part 5: Farenheit <----> Celsius
+  - Part 6: Jogger
