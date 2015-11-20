@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package arithmetic4;
-import java.util.Math;
+import java.lang.Math;
 import java.util.Scanner;
 /**
  *
