@@ -33,3 +33,4 @@ My Computer Science 2 Code
   - Part 4: Math D
   - Part 5: Farenheit <----> Celsius
   - Part 6: Jogger
+  - Part 7: Mow yard
