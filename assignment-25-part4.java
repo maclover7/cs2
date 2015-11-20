@@ -20,13 +20,13 @@ public class Arithmetic4 {
       System.out.println("Please enter the radius for the circle:");
       int radius = sc.nextInt();
       //calculate circumference
-      int circumference = 2 * radius * Math.PI;
+      double circumference = 2 * radius * Math.PI;
       System.out.println("For a radius of " + radius + ", the circumference is " + circumference + ".");
       // calculate diameter
-      int diameter = radius * 2;
+      double diameter = radius * 2;
       System.out.println("For a radius of " + radius + ", the diameter is " + diameter + ".");
       // calculate area
-      int area = Math.PI * (radius * radius);
+      double area = Math.PI * (radius * radius);
       System.out.println("For a radius of " + radius + ", the area is " + area + ".");
     }
 }
