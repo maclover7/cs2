@@ -29,3 +29,5 @@ My Computer Science 2 Code
 - Assignment 25: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTA3MTEyMTQx/details
   - Part 1: Math A
   - Part 2: Math B
+  - Part 3: Math C
+  - Part 4: Math D
