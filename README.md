@@ -34,3 +34,4 @@ My Computer Science 2 Code
   - Part 5: Farenheit <----> Celsius
   - Part 6: Jogger
   - Part 7: Mow yard
+  - Part 8: Population growth
