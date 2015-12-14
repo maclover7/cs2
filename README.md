@@ -38,3 +38,6 @@ My Computer Science 2 Code
   - Part 9: BMI
   - Part 10: Dog years <----> human yars
   - Part 11: Taxes
+- Assignment 28: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTMwNzAzNDcw/details
+  - Part 1: fast food
+  - Part 2: simple calculator
