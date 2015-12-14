@@ -41,3 +41,4 @@ My Computer Science 2 Code
 - Assignment 28: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTMwNzAzNDcw/details
   - Part 1: fast food
   - Part 2: simple calculator
+  - Part 3: right triangle
