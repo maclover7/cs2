@@ -42,3 +42,5 @@ My Computer Science 2 Code
   - Part 1: fast food
   - Part 2: simple calculator
   - Part 3: right triangle
+  - Part 4: clean products
+  - Part 5: gas n clean
