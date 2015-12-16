@@ -44,3 +44,4 @@ My Computer Science 2 Code
   - Part 3: right triangle
   - Part 4: clean products
   - Part 5: gas n clean
+- Assignment 29: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTUzMjY5OTE2/details
