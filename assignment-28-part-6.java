@@ -23,72 +23,86 @@ public class Holidays {
       int year = sc.nextInt();
       
       // Labor Day
-      int nMonth = 0; // January
-      Date d = new Date(year, nMonth, 1);
-      String labor_day = "";
       System.out.println("In " + year + ", Labor Day takes place on " + calcLaborDay(year));
       
       // Memorial Day
-      String memorial_day = "";
-      System.out.println("In " + year + ", Memorial Day takes place on " + memorial_day);
+      System.out.println("In " + year + ", Memorial Day takes place on " + calcMemorialDay(year));
       
       // Thanksgiving Day
       System.out.println("In " + year + ", Thanksgiving Day takes place on " + calcThanksgiving(year));
       
       // Election Day
-      String election_day = "";
-      System.out.println("In " + year + ", Election Day takes place on " + election_day);
+      System.out.println("In " + year + ", Election Day takes place on " + "");
     }
     
     public static Date calcLaborDay(int nYear) {
-      Calendar cal = new GregorianCalendar(nYear, Calendar.NOVEMBER, 1);
-      switch(cal.get(Calendar.DAY_OF_WEEK)) {
-        case Calendar.TUESDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 7)).getTime();
-        //
-        case Calendar.SUNDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 26)).getTime();
-        case Calendar.MONDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 25)).getTime();
-        
-        case Calendar.WEDNESDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 23)).getTime();
-        case Calendar.THURSDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 22)).getTime();
-        case Calendar.FRIDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 28)).getTime();
+      int month = 8; // September
+      Date date = new Date(nYear, 9, 1);
+      int num = date.getDay();
+      switch(num) {
+        case 0 : // Sunday
+          return new Date(nYear, month, 2);
+        case 1 : // Monday
+          return new Date(nYear, month, 7);
+        case 2 : // Tuesday
+          return new Date(nYear, month, 6);
+        case 3 : // Wednesday
+          return new Date(nYear, month, 5);
+        case 4 : // Thursday
+          return new Date(nYear, month, 4);
+        case 5 : // Friday
+          return new Date(nYear, month, 3);
         default : // Saturday
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 27)).getTime();
+          return new Date(nYear, month, 2);
+      }
+    }
+    
+    public static Date calcMemorialDay(int nYear) {
+      int nMonth = 4; //May
+      Date dtD = new Date(nYear, 4, 31);
+      int num = dtD.getDay();
+      switch(num) {
+        case 0 : // Sunday
+          return new Date(nYear, nMonth, 25);
+        case 1 : // Monday
+          return new Date(nYear, nMonth, 31);
+        case 2 : // Tuesday
+          return new Date(nYear, nMonth, 30);
+        case 3 : // Wednesday
+          return new Date(nYear, nMonth, 29);
+        case 4 : // Thursday
+          return new Date(nYear, nMonth, 28);
+        case 5 : // Friday
+          return new Date(nYear, nMonth, 27);
+        default : // Saturday
+          return new Date(nYear, nMonth, 26);
       }
     }
     
     public static Date calcThanksgiving(int nYear) {
-      Calendar cal = new GregorianCalendar(nYear, Calendar.NOVEMBER, 1);
-      switch(cal.get(Calendar.DAY_OF_WEEK)) {
+      int month = 10; // November
+      Date date = new Date(nYear, 10, 1);
+      int num = date.getDay();
+      switch(num) {
         case Calendar.SUNDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 26)).getTime();
+          return new Date(nYear, month, 26);
         case Calendar.MONDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 25)).getTime();
+          return new Date(nYear, month, 25);
         case Calendar.TUESDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 24)).getTime();
+          return new Date(nYear, month, 24);
         case Calendar.WEDNESDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 23)).getTime();
+          return new Date(nYear, month, 23);
         case Calendar.THURSDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 22)).getTime();
+          return new Date(nYear, month, 22);
         case Calendar.FRIDAY :
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 28)).getTime();
+          return new Date(nYear, month, 28);
         default : // Saturday
-          return (new GregorianCalendar(nYear, Calendar.NOVEMBER, 27)).getTime();
+          return new Date(nYear, month, 27);
       }
     }
 }
 
 /*
-Labor Day (first Monday in september)
 Memorial Day (last Monday in may)
-[x] Thanksgiving (4th Thursday in November) 
 Election Day (first Tuesday after the first Monday in November).
-
-You can leverage the functions and definitions from the weekday.java (days in the week) program. 
-The program needs to prompt the user for a desired year, then calculate and display the holiday names and their respective dates.
 */
