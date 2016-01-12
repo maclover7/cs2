@@ -75,19 +75,30 @@ public class Storeproject {
       String search_by = sc.next();
       System.out.println("What would you like the value to equal?");
       String search_value = sc.next();
+      // Convert String to Double for later use
+      double double_search_value = Double.parseDouble(search_value);
       
       Item[] return_values = new Item[0];
+      Item[] store_items = store.getItems();
       
       if (search_by == "desc") {
-        for (int i = 0; i < store.getItems().length; i++){
-          if (store.getItems()[i].getDescription() == search_value) {
-            return_values[return_values.length + 1] = store[i];
+        for (int i = 0; i < store_items.length; i++){
+          if (store_items[i].getDescription() == search_value) {
+            return_values[return_values.length + 1] = store_items[i];
           }
         }
       } else if (search_by == "bp") {
-        //
+        for (int i = 0; i < store_items.length; i++){
+          if (store_items[i].getBuyerPrice() == double_search_value) {
+            return_values[return_values.length + 1] = store_items[i];
+          }
+        }
       } else if (search_by == "sp") {
-        //
+        for (int i = 0; i < store_items.length; i++){
+          if (store_items[i].getSalesPrice() == double_search_value) {
+            return_values[return_values.length + 1] = store_items[i];
+          }
+        }
       }
     }
 }
@@ -103,8 +114,16 @@ public class Item {
     sales_price = sales_price;
   }
   
-  public string getDescription() {
+  public double getBuyerPrice() {
+    return buyer_price;
+  }
+  
+  public String getDescription() {
     return description;
+  }
+  
+  public double getSalesPrice() {
+    return sales_price;
   }
 }
 
