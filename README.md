@@ -46,3 +46,4 @@ My Computer Science 2 Code
   - Part 5: gas n clean
 - Assignment 29: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTUzMjY5OTE2/details
 - Assignment 30: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTY4NzE0NzY0/details
+- Assignment 31: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTgwNjE0MzIw/details
