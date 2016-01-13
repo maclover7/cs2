@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package storeproject;
 import java.util.Scanner;
+import java.util.ArrayList;
 /**
  *
  * @author 18mossj
@@ -18,11 +14,11 @@ public class Storeproject {
       Scanner sc = new Scanner(System.in);
       System.out.println("Please enter the store information:");
       System.out.println("Please enter the store name:");
-      String store_name = sc.next();
+      String store_name = sc.nextLine();
       System.out.println("Please enter the store owner:");
-      String store_owner = sc.next();
+      String store_owner = sc.nextLine();
       System.out.println("Please enter the store phone number:");
-      String store_phone_number = sc.next();
+      String store_phone_number = sc.nextLine();
       Item[] store_items = new Item[0];
       Store store = new Store(store_name, store_items, store_owner, store_phone_number);
       
@@ -58,17 +54,32 @@ public class Storeproject {
         }
         
       } else if (command == "buy-item") {
-        Item[] items = searchItem(sc, store);
+        Item[] search_items = searchItem(sc, store);
+        Item[] store_items = store.getItems();
         
-        if (items.length == 0) {
+        if (search_items.length == 0) {
           System.out.println("There are no items available for purchase.");
         } else {
           System.out.println("How many would you like to buy?");
           int purchase_count = sc.nextInt();
           
-          if (purchase_count > items.length) {
+          if (purchase_count > search_items.length) {
             System.out.println("You cannot buy more than are in stock.");
           } else {
+            ArrayList<Item> store_item_list = new ArrayList<Item>();
+            
+            for (int i = 0; i < store_items.length; i++){
+              store_item_list.add(store_items[i]);
+            }
+            
+            for (int i = 0; i < search_items.length; i++) {
+              store_item_list.remove(search_items[i]);
+            }
+            
+            Object[] updated_items = store_item_list.toArray();
+            
+            store.setItems(new Item[0]);
+            
             // remove from Item[] -- don't exist in inventory anymore
             System.out.println("You have bought " + purchase_count + "items.");
           }
@@ -96,7 +107,7 @@ public class Storeproject {
     
     public static void addItem(Scanner sc, Store store) {
       System.out.println("Enter the description for the item:");
-      String item_description = sc.next();
+      String item_description = sc.nextLine();
       System.out.println("Enter the buyer price for the item:");
       double item_buyer_price = sc.nextDouble();
       System.out.println("Enter the sales price for the item:");
@@ -114,7 +125,7 @@ public class Storeproject {
       System.out.println("Enter sp for sales_price");
       String search_by = sc.next();
       System.out.println("What would you like the value to equal?");
-      String search_value = sc.next();
+      String search_value = sc.nextLine();
       // Convert String to Double for later use
       double double_search_value = Double.parseDouble(search_value);
       
@@ -207,19 +218,19 @@ public class Store {
   }
   
   // set
-  public static void setItems(Item[] items) {
+  public void setItems(Item[] items) {
     items = items;
   }
   
-  public static void setLocation(String location) {
+  public void setLocation(String location) {
     location = location;
   }
   
-  public static void setOwner(String owner) {
+  public void setOwner(String owner) {
     owner = owner;
   }
   
-  public static void setPhoneNumber(String phone_number) {
+  public void setPhoneNumber(String phone_number) {
     phone_number = phone_number;
   }
 }
