@@ -22,24 +22,23 @@ public class Storeproject {
       Item[] store_items = new Item[0];
       Store store = new Store(store_name, store_items, store_owner, store_phone_number);
       
-      String command = "";
-      
-      while(command != "exit"){
+//      while(command != "exit"){
         System.out.println("Which task would you like to complete?");
-        System.out.println("Enter add-item to add an item");
-        System.out.println("Enter search-item to search for an item");
-        System.out.println("Enter buy-item to buy an item");
-        System.out.println("Enter rm-item to remove an item");
+        System.out.println("Enter add_item to add an item");
+        System.out.println("Enter search_item to search for an item");
+        System.out.println("Enter buy_item to buy an item");
+        System.out.println("Enter rm_item to remove an item");
         
-        command = sc.next();
-        dispatchCommand(command, sc, store);
-      }
+        dispatchCommand(sc, store);
+//      }
     }
     
-    public static void dispatchCommand(String command, Scanner sc, Store store){
-      if (command == "add-item") {
+    public static void dispatchCommand(Scanner sc, Store store){
+      String command = sc.next();
+      
+      if (command.equals("add_item")) {
         addItem(sc, store);
-      } else if (command == "search-item") {
+      } else if (command == "search_item") {
         Item[] items = searchItem(sc, store);
         
         if (items.length == 0) {
@@ -53,7 +52,7 @@ public class Storeproject {
           }
         }
         
-      } else if (command == "buy-item") {
+      } else if (command.equals("buy_item")) {
         Item[] search_items = searchItem(sc, store);
         Item[] store_items = store.getItems();
         
@@ -82,7 +81,7 @@ public class Storeproject {
             System.out.println("You have bought " + purchase_count + "items.");
           }
         }
-      } else if (command == "rm-item") {
+      } else if (command.equals("rm_item")) {
         Item[] search_items = searchItem(sc, store);
         Item[] store_items = store.getItems();
         
@@ -111,7 +110,7 @@ public class Storeproject {
             System.out.println("You have removed " + remove_count + "items.");
           }
         }
-      } else if (command == "exit") {
+      } else if (command.equal("exit")) {
         System.exit(0);
       }
     }
