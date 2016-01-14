@@ -76,27 +76,38 @@ public class Storeproject {
               store_item_list.remove(search_items[i]);
             }
             
-            Object[] updated_items = store_item_list.toArray();
+            Item[] updated_items = (Item[]) store_item_list.toArray();
+            store.setItems(updated_items);
             
-            store.setItems(new Item[0]);
-            
-            // remove from Item[] -- don't exist in inventory anymore
             System.out.println("You have bought " + purchase_count + "items.");
           }
         }
       } else if (command == "rm-item") {
-        Item[] items = searchItem(sc, store);
+        Item[] search_items = searchItem(sc, store);
+        Item[] store_items = store.getItems();
         
-        if (items.length == 0) {
+        if (search_items.length == 0) {
           System.out.println("There are no items available for removal.");
         } else {
           System.out.println("How many would you like to remove?");
           int remove_count = sc.nextInt();
           
-          if (remove_count > items.length) {
+          if (remove_count > search_items.length) {
             System.out.println("You cannot remove more than are in stock.");
           } else {
-            // remove from Item[] -- don't exist in inventory anymore
+            ArrayList<Item> store_item_list = new ArrayList<Item>();
+            
+            for (int i = 0; i < store_items.length; i++){
+              store_item_list.add(store_items[i]);
+            }
+            
+            for (int i = 0; i < search_items.length; i++) {
+              store_item_list.remove(search_items[i]);
+            }
+            
+            Item[] updated_items = (Item[]) store_item_list.toArray();
+            store.setItems(updated_items);
+            
             System.out.println("You have removed " + remove_count + "items.");
           }
         }
