@@ -48,3 +48,5 @@ My Computer Science 2 Code
 - Assignment 30: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTY4NzE0NzY0/details
 - Assignment 31: https://classroom.google.com/c/MTUwMzY4NDI1/a/NTgwNjE0MzIw/details
 - Assignment 32: https://classroom.google.com/c/MTUwMzY4NDI1/a/ODYwMTQzOTA4/details
+- Assignment 33: https://classroom.google.com/c/MTUwMzY4NDI1/a/ODU3MDA5OTMw/details
+  - Part 1: FastFood Update
