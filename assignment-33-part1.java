@@ -16,8 +16,11 @@ public class Fastfood {
      */
     public static void main(String[] args) {
       boolean cont = true;
+      int total_dollars = 0;
+      int total_customers = 0;
       
       do {
+        total_customers += 1;
         Scanner sc = new Scanner(System.in);
         System.out.println("How many hamburgers?");
         String hamburger_input = sc.next();
@@ -33,6 +36,7 @@ public class Fastfood {
         System.out.println("Sales tax: " + tax);
         double total_due = total + tax;
         System.out.println("Total due: " + total_due);
+        total_dollars += total_due;
       
         System.out.println("Please enter customer payment:");
         double payment = sc.nextDouble();
@@ -43,5 +47,15 @@ public class Fastfood {
         System.out.println("Another customer? (true/false)");
         cont = sc.nextBoolean();
       } while (cont == true);
+      
+      if (cont == false) {
+        System.out.println("The total customer count is " + total_customers);
+        System.out.println("The total due is " + total_dollars);
+        
+        int avg_payment;
+        avg_payment = (total_dollars / total_customers);
+        
+        System.out.println("The average payment per customer is " + avg_payment);
+      }
     }
 }
