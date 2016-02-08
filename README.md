@@ -50,3 +50,5 @@ My Computer Science 2 Code
 - Assignment 32: https://classroom.google.com/c/MTUwMzY4NDI1/a/ODYwMTQzOTA4/details
 - Assignment 33: https://classroom.google.com/c/MTUwMzY4NDI1/a/ODU3MDA5OTMw/details
   - Part 1: FastFood Update
+  - Part 2: Reciprocal Squares
+  - Part 3: Factorial
