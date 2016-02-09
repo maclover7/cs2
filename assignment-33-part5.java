@@ -17,13 +17,28 @@ public class Character {
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);
       
-      System.out.println("Eneter a string:");
+      System.out.println("Enter a string:");
       String input = sc.next();
+      
+      int heads_counter = 0;
+      int tails_counter = 0;
       
       for(int i = 0; i < input.length(); i++) {
         char c = input.charAt(i);
         
-        if (c == 'H') {}
+        if (c == 'H') {
+          heads_counter++;
+        }
+        
+        if (c == 'T') {
+          tails_counter++;
+        }
+        
+        if (c == '.') {
+          continue;
+        }
       }
+      
+      System.out.println("The ratio of heads to tails is " + (heads_counter / tails_counter));
     }
 }
