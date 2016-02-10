@@ -54,3 +54,5 @@ My Computer Science 2 Code
   - Part 1: FastFood Update
   - Part 2: Reciprocal Squares
   - Part 3: Factorial
+  - Part 4: Cuber
+  - Part 5: Character
