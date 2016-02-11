@@ -56,3 +56,5 @@ My Computer Science 2 Code
   - Part 3: Factorial
   - Part 4: Cuber
   - Part 5: Character
+  - Part 6: Fortune Cookie
+  - Part 7: Scorer
