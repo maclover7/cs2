@@ -59,3 +59,6 @@ My Computer Science 2 Code
   - Part 6: Fortune Cookie
   - Part 7: Scorer
   - Part 8: Fibonacci
+  - Part 9: Pixel Art (SKIP)
+  - Part 10: Prime Number
+  - Part 11: Number Guesser
