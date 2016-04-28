@@ -62,3 +62,5 @@ My Computer Science 2 Code
   - Part 9: Pixel Art (SKIP)
   - Part 10: Prime Number
   - Part 11: Number Guesser
+- Assignment 34:
+  - Part 1: Integer reader
