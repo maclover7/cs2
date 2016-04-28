@@ -64,3 +64,4 @@ My Computer Science 2 Code
   - Part 11: Number Guesser
 - Assignment 34:
   - Part 1: Integer reader
+  - Part 2: Names
