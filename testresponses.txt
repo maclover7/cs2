@@ -1,5 +1,1 @@
-A
-D
-C
-B
-E
+130 A B C B E
