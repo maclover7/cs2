@@ -5,7 +5,6 @@
  */
 package using.math;
   import java.util.Random;
-  import java.util.Scanner;
 /**
  *
  * @author 18mossj
